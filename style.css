@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+h1, h2 {
+    color: #007bff;
+}
+.horario {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #FFC107;
+}
+.horario th,.horario td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.horario th {
+    background-color: #007bff;
+    color: white;
+}
+.docente {
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #FFC107;
+    border-radius: 10px;
+}
+.docente h2 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+.docente p {
+    margin-top: 0;
+}
+.comunicado {
+    background-color: #fff;
+    padding: 100px;
+    margin-bottom: 100px;
+    border: 100px solid #FFC107;
+}
+.imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.boton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: #0069d9;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.comunicado, .tarea, .docente {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.tarea {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #FFC107;
+    border-radius: 10px;
+}
+.tarea h2 {
+    color: #007bff;
+}
+.tarea p {
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .docente, .comunicado, .tarea {
+        width: 100%;
+    }
+}

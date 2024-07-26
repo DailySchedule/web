@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Schedule</title>
+    <style>
+        .imagen-rectangular {
+  width: 400px; 
+  height: 120px;
+  margin: 10px; 
+}
+.imagen-rectangular {
+  margin-top: 20px;
+}
+        .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo {
+    margin-left: 10px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #007bff;
+        }
+        h2 {
+            color: #000000;
+        }
+        .horario {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #FFC107;
+        }
+        .horario th,.horario td {
+            width: 150px;
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .horario th {
+            background-color: #007bff;
+            color: white;
+        }
+        .docente {
+    padding: 1em;
+}
+        .docente {
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+            padding: 10px;
+            border: 1px solid #FFC107;
+            border-radius: 5px;
+        }
+        .docente h2 {
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+        .docente p {
+            margin-top: 0;
+        }
+        .comunicado {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #FFC107;
+            border-radius: 10px;
+        }
+        .imagen {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .boton {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #0069d9;
+        }
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .comunicado, .tarea, .docente {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        .tarea {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border: 1px solid #FFC107;
+            border-radius: 10px;
+        }
+        .tarea h2 {
+            color: #007bff;
+        }
+        .tarea p {
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            .docente, .comunicado, .tarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="Imagenes/Logo-transformed.jpeg" alt="Logo rectangular" class="imagen-rectangular">
+        <main>
+            <p>&nbsp;</p>
+            <table width="500" height="26" border="0">
+              <tr>
+                <td><a href="#Horario"><div align="center"><strong>Horario</strong></div></a></td>
+                <td><a href="#Docentes"><div align="center"><strong>Docentes</strong></div></a></td>
+                <td><a href="#Comunicados"><div align="center"><strong>Comunicados</strong></div></a></td>
+                <td><a href="#Tareas"><div align="center"><strong>Tareas</strong></div></a></td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+            </div>
+        </div> 
+    <header>
+            <div class="titulo">
+                <h1>Daily Schedule 1102</h1>
+                <h2>Daily Schedule 1102 es un horario con el fin de ayudar a mejorar academicamente a los estudiantes del curso 1102 de la institucion educativa distrital Bernardo Jaramillo</h2>
+            </div>
+        </div>
+    </header>
+        <h2><strong><a id="Horario"></a></strong>Horario</h2>
+        <table class="horario">
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1h: Economia</td>
+                    <td>1h: Español</td>
+                    <td>1h: Ingles</td>
+                    <td>1h: Economia</td>
+                    <td>1h: Artes</td>
+                </tr>
+                <tr>
+                    <td>2h: Educación física</td>
+                    <td>2h: Ingles</td>
+                    <td>2h: Ingles</td>
+                    <td>2h: Economia</td>
+                    <td>2h: Religión</td>
+                </tr>
+                <tr>
+                    <td>3h: Educación fisica</td>
+                    <td>3h: Filosofia</td>
+                    <td>3h: Filosofia</td>
+                    <td>3h: Español</td>
+                    <td>3h: Física</td>
+                </tr>
+                <tr>
+                    <td>DESCANSO</td>
+                    <td>DESCANSO</td>
+                    <td>DESCANSO</td>
+                    <td>DESCANSO</td>
+                    <td>DESCANSO</td>
+                </tr>
+                <tr>
+                    <td>4h: Informática</td>
+                    <td>4h: Geometría</td>
+                    <td>4h: Física</td>
+                    <td>4h: Audiovisuales</td>
+                    <td>4h: Español</td>
+                </tr>
+                <tr>
+                    <td>5h: Física</td>
+                    <td>5h: Geometría</td>
+                    <td>5h: Investigación</td>
+                    <td>5h: Audiovisuales</td>
+                    <td>5h: Español</td>
+                </tr>
+                <tr>
+                    <td>ALMUERZO</td>
+                    <td>ALMUERZO</td>
+                    <td>ALMUERZO</td>
+                    <td>ALMUERZO</td>
+                    <td>ALMUERZO</td>
+                </tr>
+                <tr>
+                    <td>6h: Ética</td>
+                    <td>6h: Metodos cuantitativos</td>
+                    <td>6h: Matemáticas</td>
+                    <td>6h: Quimica</td>
+                    <td>6h: Escritura</td>
+                </tr>
+                <tr>
+                    <td>7h: Matematicas</td>
+                    <td>7h: Quimica</td>
+                    <td>7h: Escritura</td>
+                    <td>7h: Matemáticas</td>
+                    <td>7h: Quimica</td>
+                </tr>
+                <tr>
+                    <td>8h: Metodos cuantitativos</td>
+                    <td>8h: Investigación</td>
+                    <td>8h: Quimica</td>
+                    <td>8h: Informática</td>
+                    <td>8h: Matemáticas</td>
+                </tr>
+            </tbody>
+</table>
+        <h2><a id="Docentes"></a>Docentes</h2>
+        <div class="contenedor">
+            <div class="docente">
+                <h2>Aura Rodriguez</h2>
+                <p>Matemáticas</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                <p>Horarios de atención a padres: Martes: 3:05-4:00</p>
+            </div>
+            <div class="docente">
+                <h2>Angel Buitrago</h2>
+                <p>Filosofía</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">angelbuitragoh@gmail.com</a></p>
+                <p>Horarios de atención a padres: Miercoles 6:20-7:15</p>
+            </div>
+            <div class="docente">
+                <h2>Luis Olivo</h2>
+                <p>Educación Física</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">lorodriguezl@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Jueves: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Jeisman Gómez</h2>
+                <p>Física</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">jgomez@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Jueves: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Nubia Urrego</h2>
+                <p>Investigación</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="Nubia.urrego605@educacionbogota.edu.co">Nubia.urrego605@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Lunes: 11:20-12:15</p>
+            </div><div class="docente">
+                <h2>Omaira Ahumada</h2>
+                <p>Español</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">oahumada@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Jueves: 8:10-9:05</p>
+                <p>Numero de contacto: 3002180268</p>
+            </div><div class="docente">
+                <h2>Yohanna Garzón</h2>
+                <p>Ingles</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">ygarzonp@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Miercoles: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Jessica Toro</h2>
+                <p>Informatica</p>
+                <img src="Imagenes/Profesora Jessica .jpg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">profejmtm@gmail.com</a></p>
+                <p>Horarios de atención a padres: Jueves: 9:05-10:00</p>
+            </div><div class="docente">
+                <h2>Luis Tovar</h2>
+                <p>Ética</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                <p>Horarios de atención a padres: Marte: 5:20-6:15</p>
+            </div><div class="docente">
+                <h2>Liliana De la Peña</h2>
+                <p>Quimica</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">ldelapena@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Martes: 5:20-6:15</p>
+            </div><div class="docente">
+                <h2>Caterin Roldan</h2>
+                <p>Escritura Creativa</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">literatura029@gmail.com</a></p>
+                <p>Horarios de atención a padres: Martes: 4:25-5:20<p>
+            </div><div class="docente">
+                <h2>Pedro Rivera</h2>
+                <p>Audio Visuales</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">priverap@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Viernes:3:05-4:00</p>
+            </div><div class="docente">
+                <h2>Marcela Umaña</h2>
+                <p>Geometría</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">jmumanag@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Viernes: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Alfedro Correal</h2>
+                <p>Economia</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">aavendanoc@educacionbogota.edu.co</a></p>
+                <p>Horarios de atención a padres: Martes: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Edgar Mora</h2>
+                <p>Religion</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com"></a>jemora@educacionbogota.edu.co</p>
+                <p>Horarios de atención a padres: Lunes: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>German Castro</h2>
+                <p>Musica</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">prommusicaexp@gmail.com</a></p>
+                <p>Horarios de atención a padres: Viernes: 6:20-7:15</p>
+            </div><div class="docente">
+                <h2>Jorge Vera</h2>
+                <p>Metodos cuantitativos</p>
+                <img src="Imagenes/Patos.jpeg" alt="Aura María" class="imagen"> 
+                <p>Correo: <a href="mailto:example@gmail.com">miguelmi82@gmail.com</a></p>
+                <p>Horarios de atención a padres: xh-xh</p>
+            </div>
+        </div>
+        <h2><a id="Comunicados"></a>Comunicados</h2>
+<div class="contenedor-comunicados">
+    <div class="comunicado">
+        <h3>Comunicado 1</h3>
+        <img src="Imagenes/circular ejemplo.jpg" alt="Comunicado 1" class="imagen-comunicado">
+        <p>Fecha: xx/xx/xxxx</p>
+        <p>Descripción:
+</div>
+        <div class="comunicado">
+            <h2>Comunicado 2</h2>
+            <p>Este es el comunicado 2</p>
+        </div>
+        <h2><a id="Tareas"></a>Tareas</h2>
+        <div class="tarea">
+            <h2>Lunes</h2>
+            <p>Esta es la tarea 1</p>
+        </div>
+        <div class="tarea">
+            <h2>Martes</h2>
+            <p>Esta es la tarea 2</p>
+        </div>
+        <div class="tarea">
+            <h2>Miercoles</h2>
+            <p>Esta es la tarea 1</p>
+        </div>
+        <div class="tarea">
+            <h2>Jueves</h2>
+            <p>Esta es la tarea 1</p>
+        </div>
+        <div class="tarea">
+            <h2>Viernes</h2>
+            <p>Esta es la tarea 1</p>
+        </div>
+</body>
+</html>
+ 
